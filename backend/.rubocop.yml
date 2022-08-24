@@ -22,6 +22,13 @@ Metrics/ClassLength:
 Metrics/CyclomaticComplexity:
   Max: 10
 
+Metrics/BlockLength:
+  Exclude:
+    - "config/routes.rb"
+    - "spec/**/*"
+    - "lib/tasks/auto_annotate_models.rake"
+    - "config/environments/development.rb"
+
 Layout/LineLength:
   Max: 200
 
@@ -49,6 +56,10 @@ Layout/EmptyLinesAroundAttributeAccessor:
 
 Layout/SpaceAroundMethodCallOperator:
   Enabled: true
+
+Layout/HashAlignment:
+  Exclude:
+    - "lib/tasks/auto_annotate_models.rake"
 
 Lint/RaiseException:
   Enabled: true

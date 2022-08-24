@@ -47,6 +47,9 @@ group :development do
   # エラー画面整形
   gem 'better_errors'
   gem 'binding_of_caller'
+
+  # モデルにスキーマ情報を記載
+  gem 'annotate'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
